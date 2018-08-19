@@ -1,21 +1,195 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-<head>
-	<title>InnovationCAM</title>
-	<script  src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js" ></script>
-</head>
-<body>
-<div id="app">
-  {{ message }}
+	<head>
+		<title>CAM</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	</head>
+	<body>
 
-</div>
-<script type="text/javascript">
-	var app = new Vue({
-  el: '#app',
-  data: {
-    message: 'Hello Vue!'
-  }
-})
-</script>
-</body>
+		<!-- Header -->
+			<header id="header">
+				<nav id="nav" class="navbar fixed-top navbar-light" style="background-color: #606dff; max-height:10%;">
+			
+					 <img class=" navbar-brand"src="images/cam.png" style="width:70px"></a>
+					 
+				   <a class="nav-item nav-link" href="#">Inicio</a>
+
+			      <a class="nav-item nav-link" href="#">Secciones</a>
+
+			      <a class="nav-item nav-link" href="#">Innovacion</a>
+			      <div>
+			     <a class="nav-item nav-link" target="_blank" href="https://www.instagram.com/cualquiercambio"> <img src="Icons/Icons/PNG/16px/403-instagram.png"></a>
+			      <a class="nav-item nav-link" target="_blank" href="https://www.twitter.com/cualquiercambio"><img src="Icons/Icons/PNG/16px/407-twitter.png"></a>
+			    </div>
+					
+					</nav>
+					
+				<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>	
+			</header>
+
+		<!-- Banner -->
+			<section id="banner">
+				<h1 >Welcome to CAM</h1>
+				<span>Create Analyze and Move the world.</span><br><br>
+				<h6 id="logo">Agencia de Servicios Digitales</h6>
+			</section>
+
+		<!-- One -->
+			<section id="one" class="wrapper">
+				<div class="inner">
+					<div class="flex flex-3">
+						<article>
+							<header>
+								<h3>AFICIONADOS A LA EXCELENCIA</h3>
+							</header class="text-justify">
+							<p>En CAM nos interesa no solo ofrecerte los mejores servicios si no la mejor forma de emplearlos, con nuestro sistema de pago por porcentaje realizado en el proyecto la preocupación en eficiencia de estos es cosa del pasado..</p>
+							<footer>
+								<a href="#" class="button special">More</a>
+							</footer>
+						</article>
+						<article>
+							<header class="text-justify">
+								<h3>MISION</h3>
+							</header>
+							<p>Impulsar a empresas, profesionales y emprendedores con los mejores servicios digitales disponibles, con un excelente trato y satisfaciendo todas sus dudas o inconvenientes.</p>
+							<footer>
+								<a href="#" class="button special">More</a>
+							</footer>
+						</article>
+						<article>
+							<header>
+								<h3>VISION</h3>
+							</header>
+							<p>Esta empresa busca integrarse en la comunidad no solo como un ente de servicios sino innovando en el sistema de pagos(pago por pocentaje).</p>
+							<footer>
+								<a href="#" class="button special">More</a>
+							</footer>
+						</article>
+					</div>
+				</div>
+			</section>
+
+		<!-- Two -->
+			<section id="two" class="wrapper style1 special">
+				<div class="inner">
+					<header>
+						<h2>Socios Fundadores</h2>
+					
+					</header>
+					<div class="flex flex-3">
+						<div class="box person">
+							<div class="image round">
+								<img width="180px" src="images/Samu.jpg" alt="Person 1" />
+							</div>
+							<h3>Samuel Amaya</h3>
+							<span>Tesorero</span>
+						</div>
+						<div class="box person">
+							<div class="image round">
+								<img width="180px" src="images/Teffi.jpg" alt="Person 2" />
+							</div>
+							<h3>Stephanie Mora</h3>
+							<span>Vicepresidenta</span>
+						</div>
+						<div class="box person">
+							<div class="image round">
+								<img src="images/pic05.jpg" alt="Person 3" />
+							</div>
+							<h3>Ricardo Contreras</h3>
+							<span>Presidente</span>
+						</div>
+						
+					</div>
+				</div>
+			</section>
+
+		<!-- Three -->
+			<section id="three" class="wrapper special">
+				<div class="inner">
+					<header class="align-center">
+						<h2>Servicios Digitales</h2>
+						<p>Cada area de servicios se divide en los siguientes:</p>
+					</header>
+					<div class="flex flex-2">
+						<article>
+							<div class="image fit">
+								<img src="images/pic01.jpg" alt="Pic 01" />
+							</div>
+							<header class="Secciones">
+								<h3>Desarrollo Web</h3>
+							</header>
+							<p>Utilizando Tecnología en tiempo en tiempo real e interfaces de autogestión amigables con el usuario potenciamos tu negocio instalando en tu empresa o proyecto una Website única con todas las herramientas que está pudiera necesitar para mejorar la experiencia del cliente en tus productos o servicios.</p>
+							<footer>
+								<a href="#" class="button special">More</a>
+							</footer>
+						</article>
+						<article>
+							<div class="image fit">
+								<img src="images/pic02.jpg" alt="Pic 02" />
+							</div>
+							<header>
+								<h3>Imagen Corporativa</h3>
+							</header>
+							<p> Abarcando secciones como lo son la creación, optimización y difusión de marca podrás contar con lo mejor de las areas que te ofrece CAM siendo complementos de está misma para un mejor servicio con calidad y eficiencia.</p>
+							<footer>
+								<a href="#" class="button special">More</a>
+							</footer>
+						</article>
+						<article>
+							<br>
+							<br>
+							<div class="image fit">
+								<img src="images/pic01.jpg" alt="Pic 01"/>
+							</div>
+						
+							<header>
+								<h3>Aplicaciones</h3>
+							</header>
+							<p>Desarrollamos herramientas para tu empresa útiles para cualquier sector de la misma, sus necesidades son el estandar y la imaginación es el límite de lo que se puede lograr con la implementación de aplicaciones en el funcionamiento de tus negocios.</p>
+							<footer>
+								<a href="#" class="button special">More</a>
+							</footer>
+						</article>
+						<article>
+							<br>
+							<br>
+							<div class="image fit">
+								<img src="images/pic02.jpg" alt="Pic 02" />
+							</div>
+							<header>
+								<h3>Consultoria</h3>
+							</header>
+							<p>Basados en nuestra experiencia en todas las areas presentes de CAM y siendo pioneros en proyectos ejercidos como LTR y la Fundación Empatía y Evolución te ofrecemos asistencia de tus negocios con esquemas y margenes de riesgos.</p>
+							<footer>
+								<a href="#" class="button special">More</a>
+							</footer>
+						</article>
+					</div>
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<div class="flex">
+						<div class="copyright">
+							<h6>&copy;2018 TODOS LOS DERECHOS RESERVADOS POR CAM </h6>
+						</div>
+					</div>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
