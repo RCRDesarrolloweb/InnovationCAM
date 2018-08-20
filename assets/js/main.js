@@ -119,7 +119,19 @@ var RIF = document.Pedido.RIF.value;
 var Direccion = document.Pedido.Direccion.value;
 var email = document.Pedido.email.value;
 var Telefono = document.Pedido.Telefono.value;
-var Servicios = document.Pedido.SDWeb.value + ',' + document.Pedido.SPWeb.value + ','+document.Pedido.SMWeb.value;
+var SDWEB = document.Pedido.SDWeb.value;
+var SPWEB = document.Pedido.SPWeb.value;
+var SMWEB = document.Pedido.SMWeb.value;
+if (SDWEB =="--Servicio Web--") {
+	SDWEB = "";
+}
+	if (SPWEB =="--Servicio Programacion Web--") {
+		SPWEB = "";
+	}
+		if (SMWEB =="--Servicio Branding--") {
+			SMWEB = "";
+		}
+var Servicios = SDWEB+' '+ SPWEB+' '+ SMWEB;
 var Comentarios= document.Pedido.comments.value;
 var docRef = db.collection("Pedidos").doc(Nombre);
 var dataen ='name='+Nombre+'&RIF=' + RIF+'&Direccion=' + Direccion+'&email=' +email+'&Telefono=' +Telefono +'&comments='+ Comentarios;
