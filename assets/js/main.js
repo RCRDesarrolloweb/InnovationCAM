@@ -154,7 +154,7 @@ docRef.get().then(function(doc) {
     Pago:"Sin definir",
     Desarrollo:"Sin empezar",
     Link:"Aún no creado",
-
+    Fecha:"Sin definir,"
 
 })
 .then(function() {
@@ -173,14 +173,14 @@ docRef.get().then(function(doc) {
   return false;
 }
 //Consulta A la Base de Datos
-i = ["NombreS","ServiciosS","Desarrollo","Pago","Porcentaje","Link"];
+i = ["NombreS","Desarrollo","Pago","Porcentaje","Link","Fecha"];
 function consultar() {
-            document.getElementById(i[0]).innerHTML = "";
-            document.getElementById(i[1]).innerHTML = "";
-            document.getElementById(i[2]).innerHTML = "";
-            document.getElementById(i[3]).innerHTML = "";
-            document.getElementById(i[4]).innerHTML = "";
-            document.getElementById(i[5]).innerHTML = "";
+            document.getElementById(i[0]).innerHTML = " ";
+            document.getElementById(i[1]).innerHTML = " ";
+            document.getElementById(i[2]).innerHTML = " ";
+            document.getElementById(i[3]).innerHTML = " ";
+            document.getElementById(i[4]).innerHTML = " ";
+            document.getElementById(i[5]).innerHTML = " ";
 var RIFC = document.getElementById('RIFC').value;
 
 db.collection("Pedidos").where("RIF", "==", RIFC)
@@ -192,12 +192,13 @@ db.collection("Pedidos").where("RIF", "==", RIFC)
             console.log(doc.id, " => ", doc.data());
             var A = doc.data();
             Condicion = A.Nombre;
+            alert(Condicion);
             document.getElementById(i[0]).innerHTML = A.Nombre;
-            document.getElementById(i[1]).innerHTML = A.Servicios;
-            document.getElementById(i[2]).innerHTML = A.Desarrollo;
-            document.getElementById(i[3]).innerHTML = A.Pago;
-            document.getElementById(i[4]).innerHTML = A.Porcentaje;
-            document.getElementById(i[5]).innerHTML = A.Link;
+            document.getElementById(i[1]).innerHTML = A.Desarrollo;
+            document.getElementById(i[2]).innerHTML = A.Pago;
+            document.getElementById(i[3]).innerHTML = A.Porcentaje;
+            document.getElementById(i[4]).innerHTML = A.Link;
+            document.getElementById(i[5]).innerHTML = A.Fecha;
            
         });
     })
@@ -208,7 +209,7 @@ db.collection("Pedidos").where("RIF", "==", RIFC)
     window.setTimeout(function Validar0() {
     
       
-      if (document.getElementById(i[0]).value=="") {
+      if (document.getElementById(i[0]).value == undefined) {
         alert('El RIF ingresado no se encuentra registrado en nuestras solicitudes');
       }
       },5000);
